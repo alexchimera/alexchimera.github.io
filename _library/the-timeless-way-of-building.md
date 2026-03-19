@@ -1,6 +1,6 @@
 ---
-title: "The Timeless Way of Building"
-author: "Christopher Alexander"
-cover: "https://books.google.com/books/content?id=H6CE9hlbO8sC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
-description: "Alexander's philosophical companion to A Pattern Language, exploring the quality without a name."
+title: "The Design of Everyday Things"
+author: "Don Norman"
+cover: "https://books.google.com/books/content?id=nVQPAAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+description: "Doors, stoves, and light switches — this book will make you see bad design everywhere and understand why good design is invisible."
 ---

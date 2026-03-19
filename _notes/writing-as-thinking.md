@@ -1,11 +1,11 @@
 ---
-title: "Writing as Thinking"
+title: "Boredom is Productive"
 date: 2026-02-10
 stage: budding
 ---
 
-Writing isn't just a way to communicate ideas — it's a way to discover them. The act of putting thoughts into words forces clarity. Vague intuitions become concrete claims. Hidden assumptions become visible.
+I deleted social media from my phone six months ago. The most surprising result wasn't that I had more time — it's that I started having ideas again.
 
-This is why "I know what I think, I just can't put it into words" is almost always wrong. If you can't write it clearly, you don't fully understand it yet.
+Boredom creates a vacuum that your brain rushes to fill. Standing in line, waiting for coffee, sitting on the bus — these used to be moments when my mind wandered to problems I was working on, made unexpected connections, or just daydreamed. I'd replaced all of that with scrolling.
 
-The implication: writing more leads to thinking better. Not polished writing — just the discipline of articulating thoughts in full sentences.
+The discomfort of boredom is the activation energy for creative thought. If you never let yourself be bored, you never give your brain permission to wander.

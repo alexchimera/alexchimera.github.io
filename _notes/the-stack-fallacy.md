@@ -1,11 +1,11 @@
 ---
-title: "The Stack Fallacy"
+title: "Maintenance is a Feature"
 date: 2026-02-20
-stage: evergreen
+stage: budding
 ---
 
-The stack fallacy is the mistaken belief that it's easy to build the layer above yours. Database companies think building an application is simple. Application companies think building a platform is simple.
+We celebrate launches and new features but rarely talk about the ongoing work of keeping software running. Maintenance isn't glamorous, but it's where most of the value lives.
 
-In reality, each layer up requires entirely different skills, domain knowledge, and customer understanding. Technical capability at one layer doesn't transfer to product insight at the next.
+A feature that ships and then slowly rots — accumulating bugs, falling behind dependency updates, confusing new team members — delivers less total value than a simpler feature that stays healthy for years.
 
-This explains why so many "we'll just build our own X" initiatives fail. Understanding the infrastructure doesn't mean understanding the users.
+I'm starting to evaluate my own work differently. Not "what did I build?" but "what's still running well?"

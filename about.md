@@ -3,12 +3,13 @@ layout: page
 title: About
 ---
 
-Welcome to my digital garden. I'm Alex — a curious builder who writes about technology, design, and the art of making things on the web.
+I'm Alex. I build software and occasionally write about it.
 
-This site is structured as a garden rather than a traditional blog. That means content here exists at different stages of growth:
+Most of what I write here comes from things I've bumped into at work — debugging sessions that taught me something, architectural decisions that aged well (or didn't), and the occasional analogy that helped me understand a concept.
 
-- **Seedlings** — rough, early ideas still taking shape
-- **Budding** — ideas that have been refined but are still developing
-- **Evergreen** — polished, well-developed pieces
+The site has two sections:
 
-Feel free to explore and wander. Not everything here is finished, and that's by design.
+- **Essays** are longer pieces where I've thought something through
+- **Notes** are shorter, less polished — things I'm still chewing on
+
+If something here is useful to you, that's great. If you disagree with something, I'd genuinely like to hear why.

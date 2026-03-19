@@ -1,11 +1,11 @@
 ---
-title: "Networked Thinking"
+title: "The 30-Minute Rule"
 date: 2026-03-12
-stage: budding
+stage: evergreen
 ---
 
-Traditional note-taking is hierarchical — folders within folders, categories within categories. Networked thinking flips this: every note can connect to any other note through links.
+If you've been stuck on a problem for 30 minutes without making progress, you must do one of three things: ask someone, take a walk, or work on something else.
 
-The power isn't in any single note. It's in the connections between them. Over time, clusters of related ideas emerge organically, revealing patterns you never planned for.
+This isn't about giving up. It's about recognizing that the brute-force approach — staring harder at the screen — has diminishing returns after about half an hour. Your subconscious is often better at solving problems than your conscious mind, but only if you give it room to work.
 
-This mirrors how the brain actually works — not in neat filing cabinets, but in webs of association.
+I've solved more bugs in the shower than at my desk.
