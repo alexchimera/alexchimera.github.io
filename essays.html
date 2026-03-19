@@ -1,0 +1,28 @@
+---
+layout: default
+title: Essays
+---
+<section class="listing-page">
+  <h1>Essays</h1>
+  <p class="listing-description">Long-form writing on technology, design, and ideas worth exploring.</p>
+  <div class="essay-grid full">
+    {% for post in site.posts %}
+    <a href="{{ post.url | relative_url }}" class="essay-card">
+      {% if post.cover %}
+        <div class="card-image" style="background-color: {{ post.cover_color | default: '#e8e4df' }}">
+          <img src="{{ post.cover | relative_url }}" alt="{{ post.title }}">
+        </div>
+      {% else %}
+        <div class="card-image placeholder" style="background-color: {{ post.cover_color | default: '#e8e4df' }}">
+          <span>{{ post.title | truncate: 1, '' }}</span>
+        </div>
+      {% endif %}
+      <div class="card-content">
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.description | default: post.excerpt | strip_html | truncate: 140 }}</p>
+        <time>{{ post.date | date: "%B %d, %Y" }}</time>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<article class="note-page">
+  <header class="note-header">
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      {% if page.stage %}
+        <span class="growth-stage {{ page.stage }}">{{ page.stage }}</span>
+      {% endif %}
+    </div>
+    <h1>{{ page.title }}</h1>
+  </header>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>

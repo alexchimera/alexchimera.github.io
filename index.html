@@ -1,0 +1,81 @@
+---
+layout: default
+title: Home
+---
+<section class="hero">
+  <div class="hero-content">
+    <h1>Alex Chimera</h1>
+    <p class="hero-tagline">writes about technology, design, and the craft of building things on the web.</p>
+    <p class="hero-description">This is a digital garden — a collection of essays, notes, and ideas at various stages of growth.</p>
+  </div>
+</section>
+
+<section class="home-section">
+  <div class="section-header">
+    <h2>Essays</h2>
+    <a href="{{ '/essays' | relative_url }}" class="section-link">View all &rarr;</a>
+  </div>
+  <div class="essay-grid">
+    {% assign essays = site.posts | where_exp: "post", "post.categories contains 'essay'" | limit: 4 %}
+    {% for post in site.posts limit:4 %}
+    <a href="{{ post.url | relative_url }}" class="essay-card">
+      {% if post.cover %}
+        <div class="card-image" style="background-color: {{ post.cover_color | default: '#e8e4df' }}">
+          <img src="{{ post.cover | relative_url }}" alt="{{ post.title }}">
+        </div>
+      {% else %}
+        <div class="card-image placeholder" style="background-color: {{ post.cover_color | default: '#e8e4df' }}">
+          <span>{{ post.title | truncate: 1, '' }}</span>
+        </div>
+      {% endif %}
+      <div class="card-content">
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.description | default: post.excerpt | strip_html | truncate: 120 }}</p>
+        <time>{{ post.date | date: "%B %Y" }}</time>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="home-section">
+  <div class="section-header">
+    <h2>Notes</h2>
+    <a href="{{ '/notes' | relative_url }}" class="section-link">View all &rarr;</a>
+  </div>
+  <div class="notes-list">
+    {% for note in site.notes limit:6 %}
+    <a href="{{ note.url | relative_url }}" class="note-item">
+      <h3>{{ note.title }}</h3>
+      <div class="note-meta">
+        {% if note.stage %}
+          <span class="growth-stage {{ note.stage }}">{{ note.stage }}</span>
+        {% endif %}
+        <time>{{ note.date | date: "%B %Y" }}</time>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+{% if site.library.size > 0 %}
+<section class="home-section">
+  <div class="section-header">
+    <h2>Library</h2>
+    <a href="{{ '/library' | relative_url }}" class="section-link">View all &rarr;</a>
+  </div>
+  <div class="library-grid">
+    {% for book in site.library limit:4 %}
+    <div class="book-card">
+      {% if book.cover %}
+        <img src="{{ book.cover }}" alt="{{ book.title }}" class="book-cover">
+      {% endif %}
+      <div class="book-info">
+        <h3>{{ book.title }}</h3>
+        <p class="book-author">{{ book.author }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

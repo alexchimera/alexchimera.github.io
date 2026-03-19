@@ -1,0 +1,22 @@
+---
+layout: default
+title: Notes
+---
+<section class="listing-page">
+  <h1>Notes</h1>
+  <p class="listing-description">Shorter, exploratory pieces — thoughts still growing and evolving.</p>
+  <div class="notes-list full">
+    {% assign sorted_notes = site.notes | sort: "date" | reverse %}
+    {% for note in sorted_notes %}
+    <a href="{{ note.url | relative_url }}" class="note-item">
+      <h3>{{ note.title }}</h3>
+      <div class="note-meta">
+        {% if note.stage %}
+          <span class="growth-stage {{ note.stage }}">{{ note.stage }}</span>
+        {% endif %}
+        <time>{{ note.date | date: "%B %d, %Y" }}</time>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>

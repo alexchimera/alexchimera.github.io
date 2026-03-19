@@ -1,0 +1,35 @@
+title: Alex Chimera
+description: A digital garden of essays, notes, and ideas
+url: "https://alexchimera.github.io"
+baseurl: ""
+
+markdown: kramdown
+permalink: /essays/:title/
+
+collections:
+  notes:
+    output: true
+    permalink: /notes/:title/
+  library:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: "note"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

@@ -1,0 +1,24 @@
+---
+layout: default
+title: Library
+---
+<section class="listing-page">
+  <h1>Library</h1>
+  <p class="listing-description">Books that have shaped my thinking.</p>
+  <div class="library-grid full">
+    {% for book in site.library %}
+    <div class="book-card">
+      {% if book.cover %}
+        <img src="{{ book.cover }}" alt="{{ book.title }}" class="book-cover">
+      {% endif %}
+      <div class="book-info">
+        <h3>{{ book.title }}</h3>
+        <p class="book-author">{{ book.author }}</p>
+        {% if book.description %}
+          <p class="book-description">{{ book.description }}</p>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
